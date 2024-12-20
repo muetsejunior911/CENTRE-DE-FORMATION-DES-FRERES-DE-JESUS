@@ -1,0 +1,176 @@
+/* Styles personnalisés */
+body {
+    background: url('img2.jpg') no-repeat center center fixed; /* Lien direct vers l'image */
+    background-size: cover; /* L'image couvre tout le fond */
+    background-attachment: fixed; /* L'image reste fixe lors du défilement */
+    font-family: Arial, sans-serif; /* Police par défaut */
+    margin: 0; /* Suppression des marges par défaut */
+}
+
+
+/* Styles de la barre de navigation */
+.navbar {
+    margin-bottom: 20px; /* Espace en dessous de la navbar */
+}
+
+.navbar-nav .nav-link {
+    margin-right: 10px; /* Espace entre les liens */
+}
+
+/* Styles des contenus des onglets */
+.tabcontent {
+    background-color: rgba(255, 255, 255, 0.9); /* Fond blanc semi-transparent */
+    padding: 40px; /* Espace intérieur */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    border-radius: 8px; /* Coins arrondis */
+    margin-bottom: 20px; /* Espace entre les sections */
+}
+
+/* Styles de la section Accueil */
+#home {
+    background-color: rgba(255, 255, 255, 0.8); /* Opacité légère */
+    padding: 20px; /* Espace intérieur */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Styles pour le formulaire */
+.form-label {
+    font-weight: bold; /* Texte en gras pour les étiquettes */
+}
+
+.form-control {
+    border-radius: 5px; /* Coins arrondis pour les champs du formulaire */
+}
+
+.btn-dark {
+    background-color: #333; /* Couleur de fond pour le bouton */
+    border: none; /* Pas de bordure */
+}
+
+.btn-dark:hover {
+    background-color: #555; /* Couleur de fond au survol */
+}
+
+/* Styles pour le texte du bloc de citation */
+.blockquote {
+    border-left: 4px solid #333; /* Bordure à gauche pour le bloc de citation */
+    padding-left: 15px; /* Espace intérieur à gauche */
+    margin: 20px 0; /* Espace au-dessus et en dessous */
+}
+
+/* Ajustement pour les écrans mobiles */
+@media (max-width: 768px) {
+    .tabcontent {
+        padding: 20px; /* Réduction de l'espace intérieur pour les petits écrans */
+    }
+
+    #home {
+        padding: 15px; /* Réduction de l'espace intérieur pour les petits écrans */
+    }
+}
+footer {
+    padding-top: 10px;  /* Diminuer l'espace au-dessus */
+    padding-bottom: 10px; /* Diminuer l'espace en dessous */
+    background-color: #343a40; /* Couleur de fond sombre */
+}
+
+footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: 10px; /* Diminuer l'espace sous le titre */
+}
+
+footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 5px; /* Diminuer l'espace entre les éléments de la liste */
+}
+
+footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    text-align: center;
+}
+
+/* Styles pour la section À propos */
+#about {
+    background-color: #f8f9fa; /* Fond clair pour la section */
+    padding: 40px; /* Espacement intérieur */
+    border-radius: 8px; /* Coins arrondis */
+}
+
+#about h2 {
+    color: #343a40; /* Couleur sombre pour le titre */
+    margin-bottom: 20px; /* Espacement en bas du titre */
+}
+
+#about h3 {
+    color: #495057; /* Couleur légèrement plus claire pour le sous-titre */
+    margin-bottom: 15px; /* Espacement en bas du sous-titre */
+}
+
+#about p {
+    color: #6c757d; /* Couleur du texte pour un meilleur contraste */
+    line-height: 1.6; /* Espacement des lignes pour une meilleure lisibilité */
+}
+
+/* Styles pour le footer */
+footer {
+    padding: 20px 0; /* Espacement en haut et en bas du footer */
+    font-size: 0.9rem; /* Taille de police réduite pour le footer */
+}
+
+footer h5 {
+    color: #ffffff; /* Couleur du texte du titre du footer */
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.8); /* Texte légèrement transparent pour le footer */
+}
+
+.comments-section {
+    border-top: 1px solid #ccc;
+    padding: 20px;
+}
+
+.comment {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+#comment-form {
+    margin-top: 20px;
+}
+
+#comment-form textarea {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#comment-form button {
+    float: right;
+}

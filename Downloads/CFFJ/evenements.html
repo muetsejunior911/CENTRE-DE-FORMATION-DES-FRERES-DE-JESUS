@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Événements - La Parole de Dieu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img3.jpg" alt="Logo" width="70" height="70" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" onclick="openTab(event, 'home')">ACCUEIL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#versets" onclick="openTab(event, 'versets')">ENSEIGNEMENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#video" onclick="openTab(event, 'video')">VIDEOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#blog" onclick="openTab(event, 'blog')">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="evenements.html" onclick="openTab(event, 'evenements')">EVENEMENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" onclick="openTab(event, 'contact')">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenu principal -->
+    <div class="container mt-5">
+        <h2 class="text-center">Événements à Venir</h2>
+        <p class="text-center">Joignez-vous à nous pour nos prochains événements.</p>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Conférence de Prière</h5>
+                        <p class="card-text">Date : 15 octobre 2023</p>
+                        <p class="card-text">Heure : 10h00 - 12h00</p>
+                        <p class="card-text">Lieu : Église de la Parole de Dieu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Retraite Spirituelle</h5>
+                        <p class="card-text">Date : 22-24 octobre 2023</p>
+                        <p class="card-text">Lieu : Centre de Retraite de la Foi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Ajoutez d'autres événements ici -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <h5>Contactez-nous</h5>
+            <p>Pour plus d'informations sur nos événements, n'hésitez pas à nous contacter.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function openTab(event, tabName) {
+            // Fonction similaire à celle de votre fichier principal
+            const tabcontent = document.getElementsByClassName("tabcontent");
+            for (let i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            navLinks.forEach(link => link.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
